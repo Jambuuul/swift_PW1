@@ -16,38 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_sky" translatesAutoresizingMaskIntoConstraints="NO" id="CrM-SE-QFV">
+                                <rect key="frame" x="-736" y="-295" width="1865" height="1442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDi-ic-dCQ">
-                                <rect key="frame" x="76" y="444" width="240" height="128"/>
+                                <rect key="frame" x="193" y="134" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-1V-DbA">
-                                <rect key="frame" x="76" y="318" width="240" height="128"/>
+                                <rect key="frame" x="272" y="112" width="32" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDu-yZ-iXB">
-                                <rect key="frame" x="146" y="647" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDu-yZ-iXB">
+                                <rect key="frame" x="113.00000000000001" y="409" width="167.33333333333337" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="PRESS ME"/>
+                                <buttonConfiguration key="configuration" style="filled" title="load some stars🌃"/>
                                 <connections>
                                     <action selector="buttonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ev-yC-P7I"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-9l-Uoe">
-                                <rect key="frame" x="76" y="69" width="240" height="118"/>
+                                <rect key="frame" x="41" y="127" width="30" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G96-Zj-Ph1">
-                                <rect key="frame" x="76" y="194" width="240" height="128"/>
+                                <rect key="frame" x="132" y="81" width="32" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CDu-yZ-iXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lOe-cO-5zJ"/>
+                            <constraint firstItem="CDu-yZ-iXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tMT-3k-pSI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="CDu-yZ-iXB" id="RRS-24-etv"/>
@@ -63,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="night_sky" width="3000" height="1688"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,42 +7,18 @@
 
 import UIKit
 
-extension UIColor {
-    convenience init(hex: String) {
-
-        if (hex.count != 6) {
-            self.init(
-                red: 0,
-                green: 0,
-                blue: 0,
-                alpha: 1.0
-            )
-            return;
-        }
-        
-        let hexNumber = String(hex[hex.index(hex.startIndex, offsetBy: 1)...])
-        let scanner = Scanner(string: hexNumber)
-        var rgbValue: UInt64 = 0
-        scanner.scanHexInt64(&rgbValue)
-
-        let r = (rgbValue & 0xff0000) >> 16
-        let g = (rgbValue & 0xff00) >> 8
-        let b = rgbValue & 0xff
-
-        self.init(
-            red: CGFloat(r) / 0xff,
-            green: CGFloat(g) / 0xff,
-            blue: CGFloat(b) / 0xff,
-            alpha: 1.0
-        )
-    }
-}
-
 final class ViewController: UIViewController {
-
-
-
+    
+    // чтобы не было магических чисел)
+    private enum Constants {
+        static let cornerRadiusMax: CGFloat = 50
+        static let animationDuration: TimeInterval = 0.5
+        
+    }
+    
+    // как ни странно, аутлет кнопки
     @IBOutlet weak var button: UIButton!
+    
     // коллекция аутлетов вьюшек на экране
     @IBOutlet var views: [UIView]!
     
@@ -51,10 +27,11 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        // изначальное заполнение
         for view in views {
             view.backgroundColor = getRandomUniqueColor(for: view)
-            view.layer.cornerRadius = .random(in: 0...30)
+            view.layer.cornerRadius = .random(in: 0...(Constants.cornerRadiusMax))
         }
         
         
@@ -63,19 +40,19 @@ final class ViewController: UIViewController {
     @IBAction func buttonWasPressed(_ sender: Any) {
         
         self.button.isEnabled = false
-        self.button.setTitle("why you press me", for: .normal)
+        self.button.setTitle("stars loading....", for: .normal)
         
         UIView.animate(
-                withDuration: 1,
+            withDuration: Constants.animationDuration,
                 animations: {
                     for view in self.views {
                         view.backgroundColor = self.getRandomUniqueColor(for: view)
-                        view.layer.cornerRadius = .random(in: 0...30)
+                        view.layer.cornerRadius = .random(in: 0...(Constants.cornerRadiusMax))
                     }
                 },
                 completion: { [weak self] _ in
                     self?.button.isEnabled = true
-                    self?.button.setTitle("im hurt", for: .normal)
+                    self?.button.setTitle("are you happy now?", for: .normal)
                 })
     }
     
@@ -94,35 +71,12 @@ final class ViewController: UIViewController {
         
         var newColor: UIColor!
         repeat {
-            newColor = generateRandomUIColor()
+            newColor = UIColor.random
         } while usedColors.contains(newColor)
         
         usedColors.insert(newColor)
         
         return newColor
     }
-    
-    /**
-     Generates random color
-     
-     - Returns: random UIColor object
-     */
-    private func generateRandomUIColor() -> UIColor {
-        /* old variant (default random */
-        return UIColor(
-            displayP3Red: .random(in: 0...1),
-            green: .random(in: 0...1),
-            blue: .random(in: 0...1),
-            alpha: 1
-        )
-         
-        
-        // hex variant
-//        let randomNumber = Int.random(in: 0...0xFFFFFF)
-//        let hexString = String(format: "%06X", randomNumber)
-//        return UIColor(hex: hexString)
-    }
-    
-    
 }
 

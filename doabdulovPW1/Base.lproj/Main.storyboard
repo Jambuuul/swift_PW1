@@ -16,22 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_sky" translatesAutoresizingMaskIntoConstraints="NO" id="CrM-SE-QFV">
-                                <rect key="frame" x="-736" y="-295" width="1865" height="1442"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stickman_sky" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-or-If8">
+                                <rect key="frame" x="-403.66666666666669" y="300" width="960.33333333333348" height="552"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDi-ic-dCQ">
-                                <rect key="frame" x="193" y="134" width="36" height="39"/>
+                                <rect key="frame" x="258" y="137" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-1V-DbA">
-                                <rect key="frame" x="272" y="112" width="32" height="36"/>
+                                <rect key="frame" x="324" y="59" width="19" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDu-yZ-iXB">
-                                <rect key="frame" x="113.00000000000001" y="409" width="167.33333333333337" height="34.333333333333314"/>
+                                <rect key="frame" x="113.00000000000001" y="459" width="167.33333333333337" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="load some stars🌃"/>
                                 <connections>
@@ -39,29 +38,79 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-9l-Uoe">
-                                <rect key="frame" x="41" y="127" width="30" height="31"/>
+                                <rect key="frame" x="349" y="106" width="10" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G96-Zj-Ph1">
-                                <rect key="frame" x="132" y="81" width="32" height="39"/>
+                                <rect key="frame" x="247" y="94" width="19" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAQ-iu-Ugo">
+                                <rect key="frame" x="324" y="170" width="19" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXo-N9-uIs">
+                                <rect key="frame" x="202" y="157" width="14" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJo-M5-9O4">
+                                <rect key="frame" x="269" y="217" width="11" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrp-A3-ZJi">
+                                <rect key="frame" x="202" y="65" width="26" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-cf-TNc">
+                                <rect key="frame" x="42" y="83" width="11" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v64-UB-EuA">
+                                <rect key="frame" x="160" y="208" width="11" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMs-Ls-Ubg">
+                                <rect key="frame" x="95" y="59" width="93" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47091582492938172" green="0.47648195876288657" blue="0.074764200976009831" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-0e-lzt">
+                                <rect key="frame" x="42" y="185" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.20007053571765479" green="0.27293110872655579" blue="0.41889497422680411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="CDu-yZ-iXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lOe-cO-5zJ"/>
+                            <constraint firstItem="ewP-or-If8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="29C-rz-Q5Y"/>
+                            <constraint firstItem="ewP-or-If8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="c6X-6y-4dM"/>
+                            <constraint firstItem="CDu-yZ-iXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="lOe-cO-5zJ"/>
                             <constraint firstItem="CDu-yZ-iXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tMT-3k-pSI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="CDu-yZ-iXB" id="RRS-24-etv"/>
+                        <outlet property="moon" destination="XMs-Ls-Ubg" id="iAk-2V-Lde"/>
                         <outletCollection property="views" destination="hDi-ic-dCQ" collectionClass="NSMutableArray" id="RIi-aT-k0D"/>
                         <outletCollection property="views" destination="xWY-1V-DbA" collectionClass="NSMutableArray" id="NzU-xc-MOV"/>
                         <outletCollection property="views" destination="G96-Zj-Ph1" collectionClass="NSMutableArray" id="rMA-7F-Bta"/>
                         <outletCollection property="views" destination="Cdw-9l-Uoe" collectionClass="NSMutableArray" id="lYs-HH-Fhg"/>
+                        <outletCollection property="views" destination="gAQ-iu-Ugo" collectionClass="NSMutableArray" id="3fh-AH-ARt"/>
+                        <outletCollection property="views" destination="KXo-N9-uIs" collectionClass="NSMutableArray" id="f66-hC-2ni"/>
+                        <outletCollection property="views" destination="kJo-M5-9O4" collectionClass="NSMutableArray" id="9Dn-bf-HGY"/>
+                        <outletCollection property="views" destination="Ndv-0e-lzt" collectionClass="NSMutableArray" id="R3f-Qi-lmD"/>
+                        <outletCollection property="views" destination="xrp-A3-ZJi" collectionClass="NSMutableArray" id="1gx-6M-FMY"/>
+                        <outletCollection property="views" destination="eNt-cf-TNc" collectionClass="NSMutableArray" id="QOT-fN-NLl"/>
+                        <outletCollection property="views" destination="v64-UB-EuA" collectionClass="NSMutableArray" id="aIB-m4-JnU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,21 +119,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="night_sky" width="3000" height="1688"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="stickman_sky" width="960" height="552"/>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

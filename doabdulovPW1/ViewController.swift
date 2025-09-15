@@ -11,7 +11,7 @@ final class ViewController: UIViewController {
     
     // чтобы не было магических чисел)
     private enum Constants {
-        static let cornerRadiusMax: CGFloat = 50
+        static let cornerRadiusMax: CGFloat = 30
         static let animationDuration: TimeInterval = 0.5
         
     }
@@ -19,6 +19,8 @@ final class ViewController: UIViewController {
     // как ни странно, аутлет кнопки
     @IBOutlet weak var button: UIButton!
     
+    // аутлет луны
+    @IBOutlet weak var moon: UIView!
     // коллекция аутлетов вьюшек на экране
     @IBOutlet var views: [UIView]!
     
@@ -29,6 +31,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
 
         // изначальное заполнение
+        moon.layer.cornerRadius = 45
         for view in views {
             view.backgroundColor = getRandomUniqueColor(for: view)
             view.layer.cornerRadius = .random(in: 0...(Constants.cornerRadiusMax))

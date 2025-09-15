@@ -32,9 +32,11 @@ extension UIColor {
         let red = CGFloat(color % ColorConstants.colorCount) / CGFloat(ColorConstants.colorCount - 1)
         
         color /= ColorConstants.colorCount
+        
         let green = CGFloat(color % ColorConstants.colorCount) / CGFloat(ColorConstants.colorCount - 1)
         
         color /= ColorConstants.colorCount
+        
         let blue = CGFloat(color % ColorConstants.colorCount) / CGFloat(ColorConstants.colorCount - 1)
 
         return UIColor(
